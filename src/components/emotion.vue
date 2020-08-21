@@ -1,30 +1,32 @@
 <template>
   <div id="example-1">    
-    <p v-bind:style="{fontSize: fsize + 'px' }"> Score : {{ count }} </p>    
+    <p v-bind:style="{fontSize: fsize + 'px' }"> Score : {{ count }} </p> 
+    <div class="row mb-5 ">
+    <div class="col-md-2" >   
     <button @click="LikeFunction()">
-      <!-- <i class="fas fa-thumbs-up" style='color:white'></i> -->
       <img src="./images/like.png">
-    </button>
+    </button></div>
+    <div class="col-md-2">
     <button @click="LoveFunction()">
-      <!-- <i class="fas fa-heart"></i> -->
       <img src="./images/love.png">
-      </button>
+      </button></div>
+    <div class="col-md-2">  
     <button @click="HahaFunction()">
-      <!-- <i class="fas fa-laugh-squint" style='color:white'></i> -->
       <img src="./images/haha.png">
-    </button>
+    </button></div>
+    <div class="col-md-2">
     <button @click="WowFunction()">
-      <!-- <i class="fas fa-surprise"></i> -->
       <img src="./images/wow.png">
-      </button>
+      </button></div>
+    <div class="col-md-2">  
     <button @click="SadFunction()">
-      <!-- <i class="far fa-frown-open"></i> -->
       <img src="./images/sad.png">
-      </button>
+      </button></div>
+    <div class="col-md-2">  
     <button @click="AngryFunction()">
-      <!-- <i class="fas fa-angry"></i> -->
       <img src="./images/angry.png">
-      </button>
+      </button></div>
+    </div>
     
       
 

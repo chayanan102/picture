@@ -9,13 +9,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img :src="img[0].src" class="img-fluid" />
+            <img :src="img[0].src" height="500" width="700"/>
           </div>
           <div class="carousel-item active">
-            <img :src="img[1].src" class="img-fluid" />
+            <img :src="img[1].src" height="500" width="700"/>
           </div>
           <div class="carousel-item">
-            <img :src="img[2].src" class="img-fluid" />
+            <img :src="img[2].src" height="500" width="700"/>
           </div>
           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -30,20 +30,20 @@
     </div>
     <div class="container">
       <hr class="featurette-divider" />
-      <div class="row featurette alert alert-success" style="opacity: 1.0; ">
+      <div class="row featurette alert alert-danger" style="opacity: 1.0; ">
         <div class="row align-items-center">
-          <div class="col-6">
-            <emotion label @cc="sum" />
-          </div>
           <div class="col-6">
             <img :src="img[0].src" class="img-fluid" />
           </div>
+          <div class="col-6">
+            <emotion label @cc="sum" />
+          </div>          
         </div>
       </div>
     </div>
     <div class="container">
       <hr class="featurette-divider" />
-      <div class="row featurette alert alert-success" style="opacity: 0.9; ">
+      <div class="row featurette alert alert-info" style="opacity: 1.0; ">
         <div class="row align-items-center">
           <div class="col-6">
             <img :src="img[1].src" class="img-fluid" />
@@ -56,15 +56,14 @@
     </div>
     <div class="container">
       <hr class="featurette-divider" />
-      <div class="row featurette alert alert-success" style="opacity: 0.9; ">
+      <div class="row featurette alert alert-danger" style="opacity: 1.0; ">
         <div class="row align-items-center">
-          <div class="col-6">
-            <!-- 2.รับค่าจาก emit @cc แล้วส่งไปทำงานใน function "sum"-->
-            <emotion label @cc="sum" />
-          </div>
           <div class="col-6">
             <img :src="img[2].src" class="img-fluid" />
           </div>
+          <div class="col-6">
+            <emotion label @cc="sum" />
+          </div>          
         </div>
       </div>
     </div>
@@ -80,11 +79,11 @@ export default {
     return {
       img: [
         {
-          src: "https://discordapp.com/channels/746380296630567082/746380296630567085/746380470807167027", },
+          src: "https://cdn.discordapp.com/attachments/746380296630567085/746380470735994880/cat.jpg", },
         {
-          src: "https://discordapp.com/channels/746380296630567082/746380296630567085/746380478365565130", },
+          src: "https://cdn.discordapp.com/attachments/746380296630567085/746380478059118682/panda.jpg", },
         {
-          src: "https://discordapp.com/channels/746380296630567082/746380296630567085/746380485969575947", },
+          src: "https://cdn.discordapp.com/attachments/746380296630567085/746380486032752700/tiger.jpg", },
       ],
     };
   },
